@@ -2,7 +2,7 @@
 %author: xavki
 
 
-# MicroK8S : Intro & Installation Manuelle
+# MicroK8S : ajout d'un noeud
 
 
 Site : https://microk8s.io/
@@ -19,9 +19,7 @@ sudo chown -f -R $USER ~/.kube
 
 microk8s status --wait-ready
 
-microk8s kubectl get nodes
+microk8s add-node
 
+microk8s leave
 
-microk8s enable metrics-server
-
-microk8s kubectl top nodes
